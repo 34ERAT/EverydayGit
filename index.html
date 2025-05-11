@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Everyday Git</title>
+  </head>
+  <body>
+    <h1>Everyday Git</h1>
+    <ol>
+      <li>
+        <div>
+          <h2>
+            <u><strong>Get Started</strong></u>
+          </h2>
+          <p>lets start creating our working directory</p>
+          <p>
+            we will make a directory called <em><u>git tutorial</u></em> and
+            there is where will be working through out this tutorial
+          </p>
+          <figure>
+            <img
+              src="./screenshots/making_directory.png"
+              alt="making directory command"
+            />
+            <figcaption>
+              creating a Directory moving into the directory
+            </figcaption>
+          </figure>
+          <p>
+            if working on linux machine run the commands above to create and
+            list the directories, else if you are working on a windows machine
+            just create the windows manually
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>What is Git ?</strong></u>
+          </h2>
+          <p>
+            In the world of Software develepment , managing changes to code of
+            time is crucial. This is where Git comes in . Git is a version
+            control sytesm, a tools that helps devs track , manage and collabore
+            on changes efficiently.
+          </p>
+          <h3>But what excatly is a version control system?</h3>
+          <p>
+            A version control system is a software tool that helps developers
+            keep track of changes in their codebase. It allows you to save
+            different versions of your project, go back to previous versions
+            when need . and collaborae with oher teams members
+          </p>
+          <h3>There are several version control out there i.e:</h3>
+          <ul>
+            <li>Subversion</li>
+            <li>Mercurial</li>
+            <li>Perforce</li>
+            <li>Bazaar</li>
+          </ul>
+          <p>
+            how ever git is the most popular and widly used one . But in this
+            blog ,Well be diving deep into Git-how it works , why it's important
+            and well also expolore github, a web platform build around Git
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Installing Git</strong></u>
+          </h2>
+          <ul>
+            <li>
+              <strong>installing git</strong>
+              <figure>
+                <img
+                  src="./screenshots/gitInstallation.png"
+                  alt="git install on arch linux"
+                  width="900"
+                />
+                <figcaption>Git Installation on Arch linux</figcaption>
+              </figure>
+
+              <p>
+                if your are on windows machine visit git offical web page and
+                download it from there
+              </p>
+            </li>
+            <li>
+              <p><strong>check if git is intalled on your machine</strong></p>
+              <figure>
+                <img
+                  src="./screenshots/checkGitInstallation.png"
+                  alt="git version command"
+                />
+                <figcaption>checking if git is installed</figcaption>
+              </figure>
+              <p>
+                you should get the result a showing git version if not git was
+                not proply installed
+              </p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Configuring Git</strong></u>
+          </h2>
+          <figure>
+            <img
+              src="./screenshots/gitconfiguretion.png"
+              alt=" configuring username and email"
+            />
+            <figcaption>
+              configure git user name and email and list the set configuration
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./screenshots/configureyourcore editor.png"
+              alt=" configuring username and email"
+            />
+            <figcaption>command to configure you core editor</figcaption>
+          </figure>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Instiallzing a Git repostitory</strong></u>
+          </h2>
+          <h3>what is a Git repo ?</h3>
+          <p>
+            a Git repository is a <strong> Virtual storage area </strong> for a
+            project that includes files and history of changes of those files
+          </p>
+          <p>
+            There are two types o repository this include
+            <strong><em>Local and Remote</em></strong> repectively
+          </p>
+          <p>
+            <strong>Local Repository:</strong> is a repo that is on you local
+            machine this includes a <strong>.git </strong>folder used to store
+            git relate metadata
+          </p>
+          <p>
+            <strong>Remote Repository:</strong> is a repo that is hosted on the
+            cloud i.e github this includes a <strong>.git </strong>folder used
+            to store git relate metadata
+          </p>
+          <figure>
+            <img
+              src="./screenshots/gitRepoinitialzation.png"
+              alt="locol repo initialization"
+            />
+            <figcaption>Initialization of git local repository</figcaption>
+          </figure>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Adding files to the staging area</strong></u>
+          </h2>
+          <p>
+            before we go any father lets create a simple html file for this demo
+            well name it <strong>index.html</strong> for the sake of this bog
+          </p>
+          <p>
+            In my case i will be using nvim for as my editor feel free to use
+            the editor of you choise
+          </p>
+          <ul>
+            <li>
+              <h3>create a file</h3>
+              <figure>
+                <img
+                  src="./screenshots/fileCreation.png"
+                  alt="file creation "
+                />
+                <figcaption>
+                  commands to create and file and open files
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="./screenshots/simplehitm.png" alt="html content" />
+                <figcaption>content of our html file</figcaption>
+              </figure>
+            </li>
+            <li>
+              <h3>staging the file</h3>
+              <figure>
+                <img
+                  src="./screenshots/staging afile.png"
+                  alt="staging a file"
+                />
+                <figcaption>
+                  checking untracked files and staging them
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Commiting changes</strong></u>
+          </h2>
+          <h3>what is a commit?</h3>
+          <p>
+            a commit in Git are the building block units of a Git project time
+            line
+          </p>
+          <p>
+            You can think of them as snapshots of your project at a specific
+            moment in time
+          </p>
+          <figure>
+            <img src="./screenshots/commit.png" alt="making a comitte" />
+            <figcaption>commit the index.html file</figcaption>
+          </figure>
+          <p>
+            the option <strong>-m</strong> is called the flag and stands for the
+            commit message
+          </p>
+          <p>
+            after commiting you notice your working tree is clean and git status
+            doesn't return any files this means you commit was a success
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Branches</strong></u>
+          </h2>
+          <h3>what is a Git Branch ?</h3>
+          <p>
+            git i a separate work space that allows you to try new ideals on
+            your project and fixs bugs with out affecting the orignal work
+            <em>you can also this it like a parallel universe if you like</em>
+          </p>
+          <h3>Common Reasons to use branches</h3>
+          <ul>
+            <li>expriment new ideas</li>
+            <li>bug fixes</li>
+            <li>development of a new feature</li>
+          </ul>
+          <h3>lets Dig in</h3>
+          <ul>
+            <li>
+              <h3>
+                <u>
+                  <strong>Creating &amp&amp Viewing all Branches</strong>
+                </u>
+              </h3>
+              <figure>
+                <img src="./screenshots/gitbranch.png" alt="" />
+                <figcaption>creating and listing branches</figcaption>
+              </figure>
+              <p>the <strong>*</strong> symbol points your current branch</p>
+            </li>
+
+            <li>
+              <h3>
+                <u><strong>Swithing Active Branches</strong></u>
+              </h3>
+              <figure>
+                <img
+                  src="./screenshots/switchbranch.png"
+                  alt="switching and checking active branch"
+                />
+                <figcapiton>
+                  switching and checking the active branch
+                </figcapiton>
+              </figure>
+            </li>
+            <li>
+              <h3>
+                <u><strong>Merging a branch</strong></u>
+              </h3>
+              <p>
+                before we get into the marging lets do some modification on our
+                original file wile in <strong>Git_power</strong>branch
+              </p>
+              <p>don't worry lets just add two lines of code</p>
+              <figure>
+                <img
+                  src="./screenshots/modified.png"
+                  alt="modified index.html"
+                />
+                <figcaption>added two tags</figcaption>
+              </figure>
+              <h4>commit you changes and switch to master</h4>
+              <figure>
+                <img
+                  src="./screenshots/commit_modifications.png"
+                  alt="commit modifications"
+                />
+                <figcaption>commiting the changes before swithing</figcaption>
+              </figure>
+              <p>
+                <strong>Note:</strong> after switching to master the file
+                changes back to the original state and the modification made are
+                not visible from the master branch
+              </p>
+              <p>
+                to see those changes on your master branch you must mergin the
+                <strong>Git_power</strong> to the master branch
+              </p>
+              <h4>mergin the two branches</h4>
+              <figure>
+                <img
+                  src="./screenshots/mergingbranches.png"
+                  alt="merging branche"
+                />
+                <figcaption>merging the branches</figcaption>
+              </figure>
+              <p>
+                notice after merging the change of the
+                <strong>Git_power</strong> branch are now visible to the
+                <strong>master</strong>
+                branch
+              </p>
+            </li>
+
+            <li>
+              <h3>
+                <u><strong>Deleting a Branch</strong></u>
+              </h3>
+              <p>
+                since we have merged the two branches and now the changes are in
+                the <strong>master </strong>branch
+              </p>
+              <p>
+                we don't need the branch again now its safe to delete the branch
+              </p>
+              <figure>
+                <img
+                  src="./screenshots/branchdeletion.png"
+                  alt="deleting  a branch"
+                />
+                <figcaption>merging the branches</figcaption>
+              </figure>
+              <p>
+                That's it you have succeffully learned the common use case of
+                git and all its most used commands
+              </p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <h2>
+            <u><strong>Next steps</strong></u>
+          </h2>
+        </div>
+      </li>
+    </ol>
+  </body>
+</html>
